@@ -2,13 +2,13 @@
 
 # FS25 AutoDrive Addon
 
-**Version 1.0.0.04** · Farming Simulator 25 · Auteur : Fabien · FR / EN
+**Version 1.0.0.05** · Farming Simulator 25 · Auteur : Fabien · FR / EN
 
 ## French
 
 Addon perso pour **AutoDrive** : il change quelques comportements d'AutoDrive sans modifier AutoDrive lui-même.
 
-Nécessite **FS25_AutoDrive** et **FS25_RealisticMechanicalSystems** (sans ce dernier, l'addon reste inactif).
+Nécessite **FS25_AutoDrive**.
 
 > 🇬🇧 [English version below](#english)
 
@@ -25,7 +25,7 @@ Réglages sauvegardés dans `modSettings/FS25_AutoDriveAddon/settings.xml`.
 
 Personal add-on for **AutoDrive**: it changes a few AutoDrive behaviours without modifying AutoDrive itself.
 
-Requires **FS25_AutoDrive** and **FS25_RealisticMechanicalSystems** (without it, the add-on stays inactive).
+Requires **FS25_AutoDrive**.
 
 ## Features
 

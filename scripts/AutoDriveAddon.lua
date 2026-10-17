@@ -17,13 +17,7 @@ function ADAddon.addModule(module)
     table.insert(ADAddon.modules, module)
 end
 
-ADAddon.REQUIRED_MOD = "FS25_RealisticMechanicalSystems"
-
 function ADAddon:loadMap(name)
-    if g_modIsLoaded == nil or not g_modIsLoaded[ADAddon.REQUIRED_MOD] then
-        print("AutoDriveAddon : " .. ADAddon.REQUIRED_MOD .. " absent, addon inactif")
-        return
-    end
     local autoDrive = ADAddon.getAutoDriveGlobal("AutoDrive")
     if autoDrive == nil then
         print("AutoDriveAddon : AutoDrive introuvable, addon inactif")

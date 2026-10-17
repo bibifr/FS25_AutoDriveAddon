@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="106">
     <author>Fabien</author>
-    <version>1.0.0.04</version>
+    <version>1.0.0.05</version>
     <multiplayer supported="true"/>
 
     <title>
@@ -12,14 +12,10 @@
     <description>
         <en><![CDATA[Personal add-on for AutoDrive (AutoDrive itself is not modified).
 
-Requires Realistic Mechanical Systems.
-
 - When AutoDrive stops the engine (waiting to load / unload, waiting for a call...), only the standard headlights stay on: work lights, high beams, beacons and turn signals are switched off. When the engine restarts, the lights are put back exactly as they were.
 
 - Settings > AutoDrive Addon: time stopped before AutoDrive turns the engine off (Never, 10 s = AutoDrive default, 30 s, 1 min, 2 min, 5 min).]]></en>
         <fr><![CDATA[Addon perso pour AutoDrive (AutoDrive n'est pas modifié).
-
-Nécessite Realistic Mechanical Systems.
 
 - Quand AutoDrive coupe le moteur (attente de chargement / déchargement, attente d'appel...), seuls les phares de base restent allumés : feux de travail, pleins phares, gyrophares et clignotants sont éteints. Au redémarrage du moteur, les feux sont remis exactement comme avant.
 
@@ -30,7 +26,6 @@ Nécessite Realistic Mechanical Systems.
 
     <dependencies>
         <dependency>FS25_AutoDrive</dependency>
-        <dependency>FS25_RealisticMechanicalSystems</dependency>
     </dependencies>
 
     <extraSourceFiles>
