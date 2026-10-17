@@ -1,5 +1,5 @@
--- Moteur coupé par AutoDrive : seuls les phares de base restent allumés,
--- puis les feux sont remis comme avant au redémarrage du moteur
+-- Moteur coupé par AutoDrive : seuls les phares de base restent allumés
+-- (s'ils l'étaient déjà), puis les feux sont remis comme avant au redémarrage du moteur
 
 ADAddonLightsOff = {}
 
@@ -28,11 +28,14 @@ local function applyLightsState(vehicle, state)
     end
 end
 
-local PARKED_STATE = {
-    mask = ADAddonLightsOff.HEADLIGHTS_MASK,
-    beacon = false,
-    turn = Lights.TURNLIGHT_OFF
-}
+-- Phares de base gardés seulement s'ils étaient allumés avant la coupure
+local function getParkedState(saved)
+    return {
+        mask = saved.mask % 2 == 1 and ADAddonLightsOff.HEADLIGHTS_MASK or 0,
+        beacon = false,
+        turn = Lights.TURNLIGHT_OFF
+    }
+end
 
 function ADAddonLightsOff.install(autoDrive)
     local original = autoDrive.updateAutoDriveLights
@@ -50,6 +53,7 @@ function ADAddonLightsOff.install(autoDrive)
         if switchOff then
             -- AutoDrive s'arrête : il gère lui-même les feux
             vehicle.adAddonSavedLights = nil
+            vehicle.adAddonParkedLights = nil
             return original(vehicle, switchOff)
         end
 
@@ -58,14 +62,16 @@ function ADAddonLightsOff.install(autoDrive)
         if isActive and not vehicle:getIsMotorStarted() then
             if vehicle.adAddonSavedLights == nil then
                 vehicle.adAddonSavedLights = getLightsState(vehicle)
+                vehicle.adAddonParkedLights = getParkedState(vehicle.adAddonSavedLights)
             end
-            applyLightsState(vehicle, PARKED_STATE)
+            applyLightsState(vehicle, vehicle.adAddonParkedLights)
             return
         end
 
         if vehicle.adAddonSavedLights ~= nil and vehicle:getIsMotorStarted() then
             applyLightsState(vehicle, vehicle.adAddonSavedLights)
             vehicle.adAddonSavedLights = nil
+            vehicle.adAddonParkedLights = nil
         end
 
         return original(vehicle, switchOff)
