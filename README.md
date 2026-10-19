@@ -20,7 +20,6 @@ Nécessite **FS25_AutoDrive**.
 | Coupure moteur | Paramètres > AutoDrive Addon : temps à l'arrêt avant qu'AutoDrive coupe le moteur. Jamais, 10 s (AutoDrive de base), 30 s, 1 min, 2 min ou 5 min. |
 | Pont-bascule | Quand AutoDrive passe sur un pont-bascule, il avance jusqu'à centrer toutes les roues de l'attelage dessus, s'arrête 5 s et une petite fenêtre affiche le produit, le chargement et le poids total. Aussi quand tu t'arrêtes toi-même dessus (3 s). Avec AutoSwitch, chaque pesée est notée dans son registre (Ctrl droit + R). |
 | Silo vide | Au chargement, si la benne contient déjà quelque chose et que plus rien n'entre pendant 30 s, AutoDrive repart avec ce qu'il a. |
-| Traverser une route | Quand le trajet AutoDrive coupe ou rejoint une route, AutoDrive regarde des deux côtés. Si quelque chose arrive, il s'arrête à 4 m du bord et attend que ce soit libre. Paramètres > AutoDrive Addon : Oui / Non et distance de regard (40 à 150 m). |
 | Outil arrière | Au lancement de la partie, chaque tracteur sélectionne l'outil attelé derrière lui. |
 
 Réglages sauvegardés dans `modSettings/FS25_AutoDriveAddon/settings.xml`.
@@ -39,7 +38,6 @@ Requires **FS25_AutoDrive**.
 | Engine stop | Settings > AutoDrive Addon: time stopped before AutoDrive turns the engine off. Never, 10 s (AutoDrive default), 30 s, 1 min, 2 min or 5 min. |
 | Weighbridge | When AutoDrive drives over a weighbridge, it centres all the wheels of the combination on it, stops for 5 s and a small window shows the product, the load and the total weight. Also when you stop on it yourself (3 s). With AutoSwitch, each weighing is written to its register (Right Ctrl + R). |
 | Empty silo | At the loading point, if the trailer already holds something and nothing more comes in for 30 s, AutoDrive leaves with what it has. |
-| Crossing a road | When the AutoDrive route crosses or joins a road, AutoDrive looks both ways. If something is coming, it stops 4 m before the edge and waits until the road is clear. Settings > AutoDrive Addon: Yes / No and look distance (40 to 150 m). |
 | Rear implement | When the game starts, each tractor selects the implement hitched behind it. |
 
 Settings are saved in `modSettings/FS25_AutoDriveAddon/settings.xml`.

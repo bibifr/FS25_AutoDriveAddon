@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="106">
     <author>Fabien</author>
-    <version>1.0.0.18</version>
+    <version>1.0.0.19</version>
     <multiplayer supported="true"/>
 
     <title>
@@ -20,8 +20,6 @@
 
 - Empty silo: at the loading point, if the trailer already holds something and nothing more comes in for 30 s, AutoDrive leaves with what it has.
 
-- Look before crossing: when the AutoDrive route crosses or joins a road (game traffic lines), AutoDrive looks along the road on both sides (game cars, tractors, player). If something is coming, it stops 4 m before the edge, waits until the road has been clear for 2 s, then crosses without stopping. Settings > AutoDrive Addon: Yes / No and look distance (40 to 150 m, 80 m by default). Tracks without a traffic line are not watched.
-
 - Rear implement: when the game starts, each tractor selects the implement hitched behind it (the first one if trailers are chained). A tractor with only a front implement is left as it is.]]></en>
         <fr><![CDATA[Addon perso pour AutoDrive (AutoDrive n'est pas modifié).
 
@@ -32,8 +30,6 @@
 - Pont-bascule : quand AutoDrive passe sur un pont-bascule, il avance jusqu'à centrer toutes les roues de l'attelage dessus, s'arrête 5 s et une petite fenêtre affiche le produit, le chargement et le poids total, puis il reprend sa route. Si tu t'arrêtes toi-même sur un pont-bascule (tout l'attelage dessus, 3 s à l'arrêt), la fenêtre s'affiche aussi. Avec AutoSwitch, chaque pesée est notée dans son registre (Ctrl droit + R), avec le lieu et qui conduisait.
 
 - Silo vide : au chargement, si la benne contient déjà quelque chose et que plus rien n'entre pendant 30 s, AutoDrive repart avec ce qu'il a.
-
-- Regarder avant de traverser : quand le trajet AutoDrive coupe ou rejoint une route (lignes du trafic du jeu), AutoDrive regarde la route des deux côtés (voitures du jeu, tracteurs, joueur). Si quelque chose arrive, il s'arrête à 4 m du bord, attend que ce soit libre depuis 2 s, puis traverse sans s'arrêter. Paramètres > AutoDrive Addon : Oui / Non et distance de regard (40 à 150 m, 80 m par défaut). Les chemins sans ligne de trafic ne sont pas surveillés.
 
 - Outil arrière : au lancement de la partie, chaque tracteur sélectionne l'outil attelé derrière lui (le premier s'il y a plusieurs remorques). Un tracteur avec seulement un outil frontal n'est pas touché.]]></fr>
     </description>
@@ -51,7 +47,6 @@
         <sourceFile filename="scripts/EngineStop.lua"/>
         <sourceFile filename="scripts/Weighing.lua"/>
         <sourceFile filename="scripts/SiloEmpty.lua"/>
-        <sourceFile filename="scripts/Crossing.lua"/>
         <sourceFile filename="scripts/RearTool.lua"/>
     </extraSourceFiles>
 </modDesc>
