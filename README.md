@@ -2,7 +2,7 @@
 
 # FS25 AutoDrive Addon
 
-**Version 1.0.0.18** · Farming Simulator 25 · Auteur : Fabien · FR / EN
+**Version 1.0.0.19** · Farming Simulator 25 · Auteur : Fabien · FR / EN
 
 ## French
 
