@@ -1,4 +1,6 @@
-###Last version https://github.com/bibifr/FS25_AutoDriveAddon/releases/latest/download/FS25_AutoDriveAddon.zip
+### Discord : https://discord.gg/S7gGzqnSEp
+
+## Last version https://github.com/bibifr/FS25_AutoDriveAddon/releases/latest/download/FS25_AutoDriveAddon.zip
 
 # FS25 AutoDrive Addon
 
