@@ -2,6 +2,7 @@
 
 | Version | Changements |
 | --- | --- |
+| 1.0.0.20 | Clignotant allumé avant les virages et les croisements (50 m par défaut), nouveau réglage « Distance clignotant » sous « Clignotant automatique » d'AutoDrive. |
 | 1.0.0.19 | Retrait de « regarder avant de traverser une route » (ne trouvait pas les routes de la carte). |
 | 1.0.0.18 | Outil arrière : au lancement de la partie, chaque tracteur sélectionne l'outil attelé derrière lui. Inclut aussi (versions 1.0.0.07 à 1.0.0.17) : pont-bascule (arrêt centré, fenêtre de pesée, registre AutoSwitch), silo vide (repart après 30 s sans remplissage). |
 | 1.0.0.06 | Moteur coupé par AutoDrive : les phares de base ne restent allumés que s'ils l'étaient déjà (de jour, tout reste éteint). |
